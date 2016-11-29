@@ -5,11 +5,14 @@ import {
   ToolBar
 } from '..';
 
+import TextBox from '../../plugins/TextBox/TextBox'
+
 
 class App extends React.Component<{}, {}> {
   render() {
     return (
-      <ToolBar />
+      // <ToolBar />
+      <TextBox />
     );
   }
 }

@@ -17,8 +17,8 @@ interface Plugin {
   text?: string
 }
 
-const store: React.Component<{}, {}>[] = [];
-
+// const store: React.Component<{}, {}>[] = [];
+//
 // @connect(
 //   state => ({
 //     routing: state.routing
@@ -36,7 +36,7 @@ class ToolBar extends React.Component<{}, { test: string }> {
   // be able to hook on onto it (?)
   private addToCurrentSlide (plugin: Plugin): void {
     this.setState({ test: 'hello' }, () => console.log(this.state));
-    store.push(plugin.component);
+    // store.push(plugin.component);
   }
 
   public render() {
